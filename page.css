@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.road{
+    background: url('/road.jpg');
+    height: 50000px;
+    width: 40%;
+         
+    /* background-size: cover; */
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    background-repeat: repeat-y;
+    animation: roadmove linear 3s infinite;
+    
+}
+.car {
+    background: url(/carre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 89px;
+    left: 550px;
+    bottom: -500px;
+    animation: carzoom linear 6s infinite;
+    
+}
+#carfor1 {
+    background: url(/carfor.png);
+    background-size: cover;
+    position: relative;
+    height: 109px;
+    width: 89px;
+    left: 475px;
+    bottom: 200px;
+     animation: carformove1 linear 4s infinite;
+     
+}
+#carfor2 {
+    background: url(/carfor2.png);
+    background-size: cover;
+    position: relative;
+    height: 128px;
+    width: 89px;
+    left: 652px;
+    bottom: 320px;
+    animation: carformove2 linear 3s infinite;
+     
+}
+.cone {
+    background: url(/cone.png);
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -62px;
+    bottom: 300px;
+     /* animation: conemove linear 1s infinite; */
+}
+.animatedcar{
+   animation: car linear 1s ;
+}
+.animatedcar1{
+    animation: car1 linear 1s ;
+}
+@keyframes roadmove{
+    100%{
+        transform: translateY(500vh);
+    }
+}
+@keyframes dingching{
+    0%{
+        height: 100px;
+    width: 89px;
+    }
+    50%{
+        height: 102px;
+    width: 91px;
+    }
+    100%
+{
+    height: 100px;
+    width: 89px;
+}
+}
+@keyframes carformove1{
+    0%{
+        bottom: 200px;
+    }
+     
+    100%{
+        bottom: -500px;
+    }
+    
+}
+@keyframes carformove2{
+    0%{
+        bottom: 320px;
+    }
+     
+    100%{
+        bottom: -380px;
+    }
+    
+}
+@keyframes car{
+     
+    0%{
+        left: 550px;
+    }
+    50%
+   {
+    left: 700px;
+   }
+   100%{
+       left: 550px;
+   }
+}
+@keyframes car1{
+     
+    0%{
+        left: 550px;
+    }
+    50%
+   {
+    left: 450px;
+   }
+   100%{
+       left: 550px;
+   }
+}
+@keyframes carzoom{
+    0%{
+        height: 100px;
+    width: 89px;
+    }
+    50%{
+        height: 250px;
+    width: 230px;
+    }
+    100%{
+        height: 100px;
+    width: 89px;
+    }
+}
